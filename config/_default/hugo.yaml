@@ -1,0 +1,4 @@
+# Hugo site configuration
+baseURL: "https://c2lab.org/"
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: false
