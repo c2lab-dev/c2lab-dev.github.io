@@ -57,6 +57,7 @@ sections:
     id: featured
     content:
       title: Featured Publications
+      count: 5
       filters:
         folders:
           - publication
@@ -69,6 +70,7 @@ sections:
     id: recent
     content:
       title: Recent Publications
+      count: 10
       text: |-
         <p style="text-align: center; color: #666; font-size: 0.9em; margin-bottom: 1em;">
         <em>Filter by Type: 1 = Conference paper, 2 = Journal article</em>
@@ -85,6 +87,7 @@ sections:
     id: talks
     content:
       title: Recent & Upcoming Talks
+      count: 5
       filters:
         folders:
           - event
