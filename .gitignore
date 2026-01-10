@@ -1,5 +1,7 @@
+# IDEs
+.idea/
 
-# Hugo build output / cache
+# Hugo
+/resources/
 public/
-resources/
-.hugo_build.lock
+assets/jsconfig.json
