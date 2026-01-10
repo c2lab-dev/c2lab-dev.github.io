@@ -16,9 +16,9 @@ appearance:
 marketing:
   seo:
     site_type: Organization
-    local_business_type: ''
-    org_name: ''
-    description: 'A highly-customizable Hugo research group theme powered by Wowchemy website builder.'
+    local_business_type: 'Research Institute'
+    org_name: 'C2Lab - Cryogenic Computing Laboratory'
+    description: 'C2Lab is a research group focused on cryogenic computing technologies and innovations.'
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
@@ -45,7 +45,7 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} C2Lab. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false

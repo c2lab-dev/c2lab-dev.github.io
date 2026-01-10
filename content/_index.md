@@ -8,14 +8,14 @@ sections:
   - block: hero
     content:
       title: |
-        Wowchemy
-        Research Group
+        C2Lab
+        Cryogenic Computing Laboratory
       image:
         filename: welcome.jpg
       text: |
         <br>
         
-        The **Wowchemy Research Group** has been a center of excellence for Artificial Intelligence research, teaching, and practice since its founding in 2016.
+        The **C2Lab** is a research group dedicated to advancing cryogenic computing technologies. We conduct cutting-edge research on quantum computing, superconducting devices, and low-temperature physics applications.
   
   - block: collection
     content:

@@ -1,41 +1,38 @@
 ---
 # Display name
-title: Nelson Bighetti
+title: C2Lab Principal Investigator
 
 # Full Name (for SEO)
-first_name: Nelson
-last_name: Bighetti
+first_name: Research
+last_name: Group
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Director of Cryogenic Computing Laboratory
 
 # Organizations/Affiliations
 organizations:
-  - name: Stanford University
+  - name: C2Lab
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: Advancing the frontiers of cryogenic computing technology.
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Cryogenic Computing
+  - Quantum Systems
+  - Superconducting Devices
 
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
+    - course: PhD in Physics
+      institution: University
+      year: 2015
+    - course: MSc in Applied Physics
+      institution: University
       year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons

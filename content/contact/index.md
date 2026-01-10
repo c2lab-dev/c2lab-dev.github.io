@@ -7,22 +7,19 @@ type: landing
 sections:
   - block: contact
     content:
-      title: Contact
+      title: Contact C2Lab
       text: |-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.
-      email: test@example.org
-      phone: 888 888 88 88
+        Get in touch with the C2Lab research group. We welcome inquiries about our cryogenic computing research, collaborations, and academic opportunities.
+      email: contact@c2lab.org
+      phone: +1 (555) 123-4567
       address:
-        street: 450 Serra Mall
+        street: Research Building
         city: Stanford
         region: CA
         postcode: '94305'
         country: United States
         country_code: US
-      coordinates:
-        latitude: '37.4275'
-        longitude: '-122.1697'
-      directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
+      directions: Please call ahead or email to arrange a visit
       office_hours:
         - 'Monday 10:00 to 13:00'
         - 'Wednesday 09:00 to 10:00'
