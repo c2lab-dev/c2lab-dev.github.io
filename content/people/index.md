@@ -5,12 +5,6 @@ date: 2022-10-24
 type: landing
 
 sections:
-  - block: markdown
-    content:
-      title: Principal Investigator
-      text: |
-        {{< mention "admin" >}}
-  
   - block: people
     content:
       title: Meet the Team
