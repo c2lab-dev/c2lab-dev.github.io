@@ -1,0 +1,12 @@
+# Publication types
+# Indices correspond to the `publication_types` in front matter
+types:
+  "1": Conference paper
+  "2": Journal article  
+  "3": Preprint
+  "4": Report
+  "5": Book
+  "6": Book section
+  "7": Thesis
+  "8": Patent
+
