@@ -29,7 +29,7 @@ education:
   courses:
     - course: PhD
       institution: Yokohama National University
-      year: ''
+      year: '2017'
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -38,7 +38,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:contact@c2lab.org'
+    link: 'mailto:olivia@c2lab.org'
 
 # Organizational groups that you belong to (for People widget)
 user_groups:

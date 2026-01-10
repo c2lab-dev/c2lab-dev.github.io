@@ -28,12 +28,6 @@ interests:
   - Superconducting Computing
   - Cryogenic Systems
 
-# Social/Academic Networking
-social:
-  - icon: envelope
-    icon_pack: fas
-    link: 'mailto:contact@c2lab.org'
-
 # Organizational groups that you belong to (for People widget)
 user_groups:
   - Grad Students
