@@ -1,71 +1,60 @@
 {{- define "main" -}}
-
-{{ $person_page := . }}
-{{ $person := .Params }}
-
-<div class="universal-wrapper pt-3">
-  <div class="row">
-    <div class="col-12 col-lg-3">
-      <div class="section-heading">
-        {{ with $person_page }}
-        <div class="author-card">
-          {{ if $person.avatar }}
-          <div class="author-avatar mb-3">
-            <img src="{{ (partial "functions/get_avatar" $person_page).Fill "270x270 Center" }}" class="rounded-circle" alt="{{ $person_page.Title }}">
-          </div>
-          {{ end }}
-          
-          <h1 class="mb-0">{{ $person_page.Title }}</h1>
-          
-          {{ with $person.role }}
-          <h3 class="mt-2 mb-3">{{ . }}</h3>
-          {{ end }}
-          
-          {{ with $person.organizations }}
-          <ul class="list-unstyled">
-            {{ range . }}
-            <li>
-              {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
-              {{ .name }}
-              {{ with .url }}</a>{{ end }}
-            </li>
-            {{ end }}
-          </ul>
+<article class="article article-author">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-3 section-heading">
+        {{ if .Params.avatar }}
+        <div class="avatar-circle mb-3">
+          {{ $avatar := (.Resources.ByType "image").GetMatch (.Params.avatar | default "avatar.*") }}
+          {{ if $avatar }}
+          <img class="avatar" src="{{ $avatar.RelPermalink }}" alt="{{ .Title }}">
           {{ end }}
         </div>
+        {{ end }}
+        
+        <h1>{{ .Title }}</h1>
+        
+        {{ with .Params.role }}
+        <h3>{{ . }}</h3>
+        {{ end }}
+        
+        {{ with .Params.organizations }}
+        <ul class="ul-org">
+          {{ range . }}
+          <li>
+            {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
+            {{ .name }}
+            {{ with .url }}</a>{{ end }}
+          </li>
+          {{ end }}
+        </ul>
         {{ end }}
       </div>
-    </div>
-    
-    <div class="col-12 col-lg-9">
-      <article class="article">
-        {{ with $person_page }}
-        
-        {{ with $person.bio }}
-        <div class="article-metadata">
-          <p>{{ . }}</p>
-        </div>
+      
+      <div class="col-12 col-lg-9">
+        {{ with .Params.bio }}
+        <p class="article-metadata">{{ . }}</p>
         {{ end }}
         
-        <div class="article-container">
+        <div class="article-style">
           {{ .Content }}
         </div>
         
-        {{ with $person.interests }}
-        <div class="row mt-4">
+        <div class="row">
+          {{ with .Params.interests }}
           <div class="col-md-5">
-            <h3>{{ i18n "interests" | default "Interests" }}</h3>
+            <h3>Interests</h3>
             <ul class="ul-interests">
               {{ range . }}
               <li>{{ . }}</li>
               {{ end }}
             </ul>
           </div>
-        {{ end }}
-        
-        {{ with $person.education }}
+          {{ end }}
+          
+          {{ with .Params.education }}
           <div class="col-md-7">
-            <h3>{{ i18n "education" | default "Education" }}</h3>
+            <h3>Education</h3>
             <ul class="ul-edu fa-ul">
               {{ range .courses }}
               <li>
@@ -78,18 +67,19 @@
               {{ end }}
             </ul>
           </div>
+          {{ end }}
         </div>
-        {{ end }}
         
-        {{ with $person.social }}
-        <div class="row mt-4">
+        {{ with .Params.social }}
+        <div class="row">
           <div class="col-12">
-            <h3>{{ i18n "contact" | default "Contact" }}</h3>
-            <ul class="network-icon" aria-hidden="true">
+            <h3>Contact</h3>
+            <ul class="network-icon">
               {{ range . }}
               <li>
-                <a href="{{ .link }}" {{ if not (in (slice "mailto:" "tel:") (substr .link 0 7)) }}target="_blank" rel="noopener"{{ end }}>
+                <a href="{{ .link }}" {{ if not (strings.HasPrefix .link "mailto:") }}target="_blank" rel="noopener"{{ end }}>
                   <i class="{{ .icon_pack }} {{ .icon }} big-icon"></i>
+                  {{ with .label }}<span>{{ . }}</span>{{ end }}
                 </a>
               </li>
               {{ end }}
@@ -97,11 +87,8 @@
           </div>
         </div>
         {{ end }}
-        
-        {{ end }}{{/* end with $person_page */}}
-      </article>
+      </div>
     </div>
   </div>
-</div>
-
+</article>
 {{- end -}}
