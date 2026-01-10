@@ -9,17 +9,16 @@ sections:
     content:
       title: Contact C2Lab
       text: |-
-        Get in touch with the C2Lab research group. We welcome inquiries about our cryogenic computing research, collaborations, and academic opportunities.
+        Get in touch with the C2Lab research group at Kyushu University. We welcome inquiries about our cryogenic computing research, collaborations, and academic opportunities.
       email: contact@c2lab.org
-      phone: +1 (555) 123-4567
       address:
-        street: Research Building
-        city: Stanford
-        region: CA
-        postcode: '94305'
-        country: United States
-        country_code: US
-      directions: Please call ahead or email to arrange a visit
+        street: Kyushu University
+        city: Fukuoka
+        region: ''
+        postcode: ''
+        country: Japan
+        country_code: JP
+      directions: Please email to arrange a visit
       office_hours:
         - 'Monday 10:00 to 13:00'
         - 'Wednesday 09:00 to 10:00'

@@ -18,7 +18,7 @@ marketing:
     site_type: Organization
     local_business_type: 'Research Institute'
     org_name: 'C2Lab - Cryogenic Computing Laboratory'
-    description: 'C2Lab is a research group focused on cryogenic computing technologies and innovations.'
+    description: 'C2Lab advances end-to-end superconducting digital computing, spanning device technologies, circuit/architecture design, and full-stack EDA workflows for scalable cryogenic systems.'
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
@@ -72,7 +72,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: 'https://github.com/c2lab-dev/c2lab-dev.github.io'
     content_dir: content
     branch: main
   avatar:

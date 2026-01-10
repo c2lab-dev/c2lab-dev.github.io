@@ -15,7 +15,12 @@ sections:
       text: |
         <br>
         
-        The **C2Lab** is a research group dedicated to advancing cryogenic computing technologies. We conduct cutting-edge research on quantum computing, superconducting devices, and low-temperature physics applications.
+        Founded in 2021 at Kyushu University, **C2Lab** advances end-to-end superconducting digital computing, spanning device technologies, circuit/architecture design, and full-stack EDA workflows for scalable cryogenic systems.
+        
+        **Research Focus:**
+        - Cryogenic AI Acceleration
+        - Superconducting EDA Development
+        - Cryogenic Measurement System
   
   - block: collection
     content:
