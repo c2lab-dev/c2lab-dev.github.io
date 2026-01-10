@@ -15,6 +15,11 @@ sections:
           gradient_start: '#1a1a2e'
           gradient_end: '#16213e'
           text_color_light: true
+        link:
+          icon: users
+          icon_pack: fas
+          text: Join Our Team
+          url: './contact/'
       - title: Cryogenic AI Acceleration
         content: 'Advancing AI computing with superconducting circuits at cryogenic temperatures for unprecedented energy efficiency.'
         align: left
@@ -36,11 +41,6 @@ sections:
           gradient_start: '#16213e'
           gradient_end: '#1a1a2e'
           text_color_light: true
-        link:
-          icon: users
-          icon_pack: fas
-          text: Join Our Team
-          url: './contact/'
     design:
       slide_height: ''
       is_fullscreen: true
