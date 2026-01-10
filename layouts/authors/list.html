@@ -1,0 +1,113 @@
+{{- define "main" -}}
+
+{{ $person_page := "" }}
+{{ $person := "" }}
+
+{{ $author := .Params.authors }}
+{{ range first 1 $author }}
+  {{ $person_page = site.GetPage (printf "/authors/%s" (path.Base (path.Split . ).Dir)) }}
+  {{ $person = $person_page.Params }}
+{{ end }}
+
+<div class="universal-wrapper pt-3">
+  <div class="row">
+    <div class="col-12 col-lg-3">
+      <div class="section-heading">
+        {{ with $person_page }}
+        <div class="author-card">
+          {{ if $person.avatar }}
+          <div class="author-avatar mb-3">
+            <img src="{{ (partial "functions/get_avatar" $person_page).Fill "270x270 Center" }}" class="rounded-circle" alt="{{ $person_page.Title }}">
+          </div>
+          {{ end }}
+          
+          <h1 class="mb-0">{{ $person_page.Title }}</h1>
+          
+          {{ with $person.role }}
+          <h3 class="mt-2 mb-3">{{ . }}</h3>
+          {{ end }}
+          
+          {{ with $person.organizations }}
+          <ul class="list-unstyled">
+            {{ range . }}
+            <li>
+              {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
+              {{ .name }}
+              {{ with .url }}</a>{{ end }}
+            </li>
+            {{ end }}
+          </ul>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    
+    <div class="col-12 col-lg-9">
+      <article class="article">
+        {{ with $person_page }}
+        
+        {{ with $person.bio }}
+        <div class="article-metadata">
+          <p>{{ . }}</p>
+        </div>
+        {{ end }}
+        
+        <div class="article-container">
+          {{ .Content }}
+        </div>
+        
+        {{ with $person.interests }}
+        <div class="row mt-4">
+          <div class="col-md-5">
+            <h3>{{ i18n "interests" | default "Interests" }}</h3>
+            <ul class="ul-interests">
+              {{ range . }}
+              <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+          </div>
+        {{ end }}
+        
+        {{ with $person.education }}
+          <div class="col-md-7">
+            <h3>{{ i18n "education" | default "Education" }}</h3>
+            <ul class="ul-edu fa-ul">
+              {{ range .courses }}
+              <li>
+                <i class="fa-li fas fa-graduation-cap"></i>
+                <div class="description">
+                  <p class="course">{{ .course }}{{ with .year }}, {{ . }}{{ end }}</p>
+                  <p class="institution">{{ .institution }}</p>
+                </div>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+        {{ end }}
+        
+        {{ with $person.social }}
+        <div class="row mt-4">
+          <div class="col-12">
+            <h3>{{ i18n "contact" | default "Contact" }}</h3>
+            <ul class="network-icon" aria-hidden="true">
+              {{ range . }}
+              <li>
+                <a href="{{ .link }}" {{ if not (in (slice "mailto:" "tel:") (substr .link 0 7)) }}target="_blank" rel="noopener"{{ end }}>
+                  <i class="{{ .icon_pack }} {{ .icon }} big-icon"></i>
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+        {{ end }}
+        
+        {{ end }}{{/* end with $person_page */}}
+      </article>
+    </div>
+  </div>
+</div>
+
+{{- end -}}
