@@ -18,11 +18,6 @@ sections:
               brightness: 0.6
           position: center
           color: '#1a1a1a'
-        link:
-          icon: arrow-down
-          icon_pack: fas
-          text: Learn More
-          url: '#about'
       - title: Cryogenic AI Acceleration
         content: 'Advancing AI computing with superconducting circuits at cryogenic temperatures for unprecedented energy efficiency.'
         align: left
@@ -62,7 +57,7 @@ sections:
       slide_height: ''
       is_fullscreen: true
       loop: true
-      interval: 4000
+      interval: 7000
   
   - block: collection
     content:
