@@ -7,3 +7,22 @@
 .cta-group {
   justify-content: center;
 }
+
+// Responsive font sizes for slider on mobile devices
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem !important;
+  }
+  
+  .hero-lead {
+    font-size: 1rem !important;
+  }
+  
+  .wg-hero h1 {
+    font-size: 2rem !important;
+  }
+  
+  .wg-hero p {
+    font-size: 1rem !important;
+  }
+}
