@@ -12,42 +12,30 @@ sections:
         content: Cryogenic Computing Laboratory at Kyushu University
         align: center
         background:
-          image:
-            filename: welcome.jpg
-            filters:
-              brightness: 0.6
-          position: center
-          color: '#1a1a1a'
+          gradient_start: '#1a1a2e'
+          gradient_end: '#16213e'
+          text_color_light: true
       - title: Cryogenic AI Acceleration
         content: 'Advancing AI computing with superconducting circuits at cryogenic temperatures for unprecedented energy efficiency.'
         align: left
         background:
-          image:
-            filename: coders.jpg
-            filters:
-              brightness: 0.5
-          position: center
-          color: '#2c3e50'
+          gradient_start: '#16213e'
+          gradient_end: '#0f3460'
+          text_color_light: true
       - title: Superconducting EDA Development
         content: 'Building full-stack EDA workflows for designing and simulating superconducting digital systems.'
         align: center
         background:
-          image:
-            filename: contact.jpg
-            filters:
-              brightness: 0.6
-          position: right
-          color: '#34495e'
+          gradient_start: '#0f3460'
+          gradient_end: '#16213e'
+          text_color_light: true
       - title: Cryogenic Measurement System
         content: 'Developing advanced measurement infrastructure for characterizing devices at ultra-low temperatures.'
         align: right
         background:
-          image:
-            filename: welcome.jpg
-            filters:
-              brightness: 0.5
-          position: center
-          color: '#2c3e50'
+          gradient_start: '#16213e'
+          gradient_end: '#1a1a2e'
+          text_color_light: true
         link:
           icon: users
           icon_pack: fas
@@ -56,8 +44,8 @@ sections:
     design:
       slide_height: ''
       is_fullscreen: true
-      loop: true
-      interval: 7000
+      loop: false
+      interval: 2000
   
   - block: collection
     content:
