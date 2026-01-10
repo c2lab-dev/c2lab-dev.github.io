@@ -1,13 +1,7 @@
 {{- define "main" -}}
 
-{{ $person_page := "" }}
-{{ $person := "" }}
-
-{{ $author := .Params.authors }}
-{{ range first 1 $author }}
-  {{ $person_page = site.GetPage (printf "/authors/%s" (path.Base (path.Split . ).Dir)) }}
-  {{ $person = $person_page.Params }}
-{{ end }}
+{{ $person_page := . }}
+{{ $person := .Params }}
 
 <div class="universal-wrapper pt-3">
   <div class="row">

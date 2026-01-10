@@ -5,11 +5,11 @@ date: 2022-10-24
 type: landing
 
 sections:
-  - block: about.biography
-    id: about
+  - block: markdown
     content:
       title: Principal Investigator
-      username: admin
+      text: |
+        {{< mention "admin" >}}
   
   - block: people
     content:
