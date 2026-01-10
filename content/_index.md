@@ -47,16 +47,71 @@ sections:
       loop: false
       interval: 2000
   
-  - block: collection
+  - block: about.biography
+    id: about
     content:
-      title: Latest Preprints
-      text: ""
-      count: 5
+      title: Biography
+      username: admin
+  
+  - block: collection
+    id: featured
+    content:
+      title: Featured Publications
       filters:
         folders:
           - publication
-        publication_type: 'article'
+        featured_only: true
     design:
+      columns: '2'
+      view: card
+  
+  - block: collection
+    id: recent
+    content:
+      title: Recent Publications
+      text: |-
+        <p style="text-align: center; color: #666; font-size: 0.9em; margin-bottom: 1em;">
+        <em>Filter by Type: 1 = Conference paper, 2 = Journal article</em>
+        </p>
+      filters:
+        folders:
+          - publication
+        exclude_featured: true
+    design:
+      columns: '2'
       view: citation
-      columns: '1'
+  
+  - block: collection
+    id: talks
+    content:
+      title: Recent & Upcoming Talks
+      filters:
+        folders:
+          - event
+    design:
+      columns: '2'
+      view: compact
+  
+  - block: contact
+    id: contact
+    content:
+      title: Contact
+      subtitle:
+      text: |-
+        For prospective students, collaborations, or general inquiries, please reach out.
+      email: olivia@c2lab.org
+      address:
+        street: 744 Motooka, Nishi-ku
+        city: Fukuoka
+        postcode: '819-0395'
+        country: Japan
+        country_code: JP
+      directions: Graduate School of Information Science and Electrical Engineering, Kyushu University
+      contact_links:
+        - icon: twitter
+          icon_pack: fab
+          name: DM Me
+          link: 'https://twitter.com/OliviaChenC2Lab'
+    design:
+      columns: '2'
 ---
