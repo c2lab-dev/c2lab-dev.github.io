@@ -5,22 +5,64 @@ date: 2022-10-24
 type: landing
 
 sections:
-  - block: hero
+  - block: slider
     content:
-      title: |
-        C2Lab
-        Cryogenic Computing Laboratory
-      image:
-        filename: welcome.jpg
-      text: |
-        <br>
-        
-        Founded in 2021 at Kyushu University, **C2Lab** advances end-to-end superconducting digital computing, spanning device technologies, circuit/architecture design, and full-stack EDA workflows for scalable cryogenic systems.
-        
-        **Research Focus:**
-        - Cryogenic AI Acceleration
-        - Superconducting EDA Development
-        - Cryogenic Measurement System
+      slides:
+      - title: C2Lab
+        content: Cryogenic Computing Laboratory at Kyushu University
+        align: center
+        background:
+          image:
+            filename: welcome.jpg
+            filters:
+              brightness: 0.6
+          position: center
+          color: '#1a1a1a'
+        link:
+          icon: arrow-down
+          icon_pack: fas
+          text: Learn More
+          url: '#about'
+      - title: Cryogenic AI Acceleration
+        content: 'Advancing AI computing with superconducting circuits at cryogenic temperatures for unprecedented energy efficiency.'
+        align: left
+        background:
+          image:
+            filename: coders.jpg
+            filters:
+              brightness: 0.5
+          position: center
+          color: '#2c3e50'
+      - title: Superconducting EDA Development
+        content: 'Building full-stack EDA workflows for designing and simulating superconducting digital systems.'
+        align: center
+        background:
+          image:
+            filename: contact.jpg
+            filters:
+              brightness: 0.6
+          position: right
+          color: '#34495e'
+      - title: Cryogenic Measurement System
+        content: 'Developing advanced measurement infrastructure for characterizing devices at ultra-low temperatures.'
+        align: right
+        background:
+          image:
+            filename: welcome.jpg
+            filters:
+              brightness: 0.5
+          position: center
+          color: '#2c3e50'
+        link:
+          icon: users
+          icon_pack: fas
+          text: Join Our Team
+          url: './contact/'
+    design:
+      slide_height: ''
+      is_fullscreen: true
+      loop: true
+      interval: 4000
   
   - block: collection
     content:
