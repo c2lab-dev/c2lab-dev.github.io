@@ -23,7 +23,7 @@ sections:
         **Doctor of Engineering** | Yokohama National University, Japan | 2014.04 - 2017.03  
         - Graduate School of Engineering Science
 
-        **Master of Engineering** | Yokohama National University, Japan | [Year]  
+        **Master of Engineering** | Yokohama National University, Japan | 2011.10 - 2012.03 
         - Graduate School of Engineering Science
 
         **Bachelor of Engineering** | Southeast University, China | 2004.09 - 2008.06  
@@ -150,9 +150,9 @@ sections:
 
         ## Teaching
 
-        ### Kyushu University (2024 - Present)
+        ### Kyushu University (2025 - Present)
 
-        Courses to be updated.
+        Introduction to Computer System
 
         ### Tokyo City University (2021 - 2024)
 
