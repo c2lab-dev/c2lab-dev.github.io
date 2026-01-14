@@ -36,7 +36,7 @@ education:
       year: 2014 - 2017
     - course: Master of Engineering
       institution: Yokohama National University
-      year: ''
+      year: 2012 - 2014
     - course: Bachelor of Engineering
       institution: Southeast University, China
       year: 2004 - 2008
